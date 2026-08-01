@@ -1,7 +1,24 @@
 aid: sora
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sora.png
 name: Sora
-description: Sora is a company surfaced as a portfolio company of union-square-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Sora Schools is a fully online, project-based independent middle and high school (soraschools.com),
+  backed by Union Square Ventures. Students learn through interdisciplinary, interest-driven projects and live
+  small-group expeditions rather than traditional grade-level classes, with an accredited diploma path. It is
+  surfaced in the API Evangelist network as a Union Square Ventures portfolio company. As of this enrichment
+  pass the public site is served behind a Cloudflare bot challenge and Sora publishes no public developer,
+  API, or integrations program, so this profile carries only probed infrastructure signals (DNS/TLS/security)
+  rather than API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/sora/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Education
+- Online Learning
+- K-12
+- EdTech
+- Project-Based Learning
+- Schools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sora-domain-security.yml
 - type: Website
   url: https://soraschools.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
